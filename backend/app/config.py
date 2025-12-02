@@ -1,0 +1,21 @@
+import os
+from pydantic_settings import BaseSettings
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class Settings(BaseSettings):
+    database_url: str = "postgresql+psycopg2://savvas:Savvas123!@db:5432/security_db"
+    secret_key: str = "8b9ca364-443f-9920-b8a94c54"
+    api_prefix: str = "/api/v1"
+    api_host: str = "security_backend"
+    api_port: int = 8000
+    debug: bool = True
+    log_level: str = "INFO"
+    nvd_api_key: str = "4a116d75-367e-4c9b-90de-904679b57060"
+    environment: str = "development"
+
+    class Config:
+        env_file = ".env"
+
+settings = Settings()

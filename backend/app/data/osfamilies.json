@@ -1,0 +1,178 @@
+{
+  "Cisco": {
+    "osFamilies": [
+      "IOS",
+      "IOS-XE",
+      "IOS-XR",
+      "NX-OS",
+      "ASA",
+      "FXOS"
+    ],
+    "default": "IOS-XE",
+    "urls": [
+      "https://www.cisco.com/c/en/us/support/index.html",
+      "https://software.cisco.com/"
+    ]
+  },
+  "Juniper": {
+    "osFamilies": [
+      "Junos",
+      "Junos SR",
+      "ScreenOS"
+    ],
+    "default": "Junos",
+    "urls": [
+      "https://support.juniper.net/support/downloads/"
+    ]
+  },
+  "Fortinet": {
+    "osFamilies": [
+      "FortiOS",
+      "FortiProxyOS"
+    ],
+    "default": "FortiOS",
+    "urls": [
+      "https://www.fortinet.com/support/product-downloads",
+      "https://software.cisco.com/"
+    ]
+  },
+  "Palo Alto": {
+    "osFamilies": [
+      "PAN-OS"
+    ],
+    "default": "PAN-OS",
+    "url": [
+      "https://docs.paloaltonetworks.com/pan-os/10-2/pan-os-upgrade/software-and-content-updates/pan-os-software-updates"
+    ]
+  },
+  "SonicWall": {
+    "osFamilies": [
+      "SonicOS"
+    ],
+    "default": "SonicOS",
+    "urls": [
+      "https://www.mysonicwall.com/muir/freedownloads"
+    ]
+  },
+  "Check Point": {
+    "osFamilies": [
+      "Gaia",
+      "Gaia Embedded"
+    ],
+    "default": "Gaia",
+    "urls": [
+      "https://downloads.checkpoint.com/dc/login.htm"
+    ]
+  },
+  "MikroTik": {
+    "osFamilies": [
+      "RouterOS"
+    ],
+    "default": "RouterOS",
+    "urls": [
+      "https://mikrotik.com/download"
+    ]
+  },
+  "Ubiquiti": {
+    "osFamilies": [
+      "EdgeOS",
+      "AirOS",
+      "UniFiOS"
+    ],
+    "default": "UniFiOS",
+    "urls": [
+      "https://ui.com/download"
+    ]
+  },
+  "Huawei": {
+    "osFamilies": [
+      "VRP"
+    ],
+    "default": "VRP",
+    "urls": [
+      "https://support.huawei.com/enterprise/en/software/index.html"
+    ]
+  },
+  "HPE": {
+    "osFamilies": [
+      "Comware",
+      "ArubaOS-Switch"
+    ],
+    "default": "Comware",
+    "urls": [
+      "https://support.hpe.com/connect/s/?language=en_US"
+    ]
+  },
+  "Aruba": {
+    "osFamilies": [
+      "ArubaOS",
+      "InstantOS"
+    ],
+    "default": "ArubaOS",
+    "urls": [
+      "https://support.arubanetworks.com/"
+    ]
+  },
+  "Netgear": {
+    "osFamilies": [
+      "Firmware"
+    ],
+    "default": "Firmware",
+    "urls": [
+      "https://www.netgear.com/support/download/"
+    ]
+  },
+  "Zyxel": {
+    "osFamilies": [
+      "ZyNOS",
+      "ZyxelOS"
+    ],
+    "default": "ZyNOS",
+    "urls": [
+      "https://www.zyxel.com/us/en-us/support/download"
+    ]
+  },
+  "Sophos": {
+    "osFamilies": [
+      "Sophos Firewall OS",
+      "Sophos UTM"
+    ],
+    "default": "Sophos Firewall OS",
+    "urls": [
+      "https://support.sophos.com/support/s/article/KBA-000007972?language=en_US"
+    ]
+  },
+  "TP-Link": {
+    "osFamilies": [
+      "Firmware"
+    ],
+    "default": "Firmware",
+    "urls": [
+      "https://www.tp-link.com/us/support/download/"
+    ]
+  },
+  "Dell": {
+    "osFamilies": [
+      "OS10",
+      "Networking OS6"
+    ],
+    "default": "OS10",
+    "urls": [
+      "https://www.dell.com/support/home/el-gr?app=drivers",
+      "https://www.dell.com/support/contents/en-us/category/product-support/self-support-knowledgebase/software-and-downloads/download-center"
+    ]
+  },
+  "Dlink": {
+    "osFamilies": [
+      "MontaVista",
+      "ThreadX",
+      "ATMOS RTOS",
+      "OpenWrt",
+      "DD-WRT"
+    ],
+    "default": "MontaVista",
+    "urls": [
+      "https://support.dlink.com/"
+    ]
+  }
+}

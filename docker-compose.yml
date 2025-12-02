@@ -1,0 +1,47 @@
+services:
+  db:
+    image: postgres:17.6
+    container_name: security_postgres_db
+    restart: always
+    environment:
+      POSTGRES_DB: security_db
+      POSTGRES_USER: savvas
+      POSTGRES_PASSWORD: Savvas123!
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: security_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://savvas:Savvas123!@db:5432/security_db
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/app
+  
+  frontend:
+    build: ./frontend
+    container_name: security_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - VITE_API_URL=http://security_backend:8000
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+
+volumes:
+  postgres_data:
