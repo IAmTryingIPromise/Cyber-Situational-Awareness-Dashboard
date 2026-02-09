@@ -1,4 +1,4 @@
-import os
+-import os
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
 
@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     api_port: int = 8000
     debug: bool = True
     log_level: str = "INFO"
-    nvd_api_key: str = "4a116d75-367e-4c9b-90de-904679b57060"
+    nvd_api_key: str = "NVD-API-KEY-HERE"
     environment: str = "development"
 
     class Config:
